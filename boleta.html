@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/bootstrap.css">
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light d-print-none shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">UPTecámac</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" href="boleta.html">Boleta</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="m-3">
+        <form action="Boleta.php" method="post">
+            <div class="row mb-3">
+                <div class="col-9 row">
+                    <div class="col-12">
+                        <label class="form-label">Nombre del alumno</label>
+                        <input class="form-control" type="text" name="nombre" id="">
+                    </div>
+                    <div class="col-6">
+                        <label class="form-label">Matricula</label>
+                        <input class="form-control" type="text" name="matricula" id="" placeholder="1321124285">
+                    </div>
+                    <div class="col-6">
+                        <label class="form-label">Grupo</label>
+                        <input class="form-control" type="text" name="grupo" id="" placeholder="4422-IS"> 
+                    </div>
+                </div>
+                <div class="col-3 row">
+                    <div class="col d-flex justify-content-center"><img src="assets/logo upt.png" height="150" alt=""></div>
+                </div>
+            </div>            
+            <table class="table table-bordered table-sm">
+                <thead>
+                    <tr>
+                        <td rowspan="2">Materias</td>
+                        <td colspan="3">Parcial 1</td>
+                        <td colspan="3">Parcial 2</td>
+                        <td colspan="3">Parcial 3</td>
+
+                    </tr>
+                    <tr>
+                        <td>C</td>
+                        <td>H</td>
+                        <td>S</td>
+                        <td>C</td>
+                        <td>H</td>
+                        <td>S</td>
+                        <td>C</td>
+                        <td>H</td>
+                        <td>S</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ingles IV</td>
+                        <td><input class="w-100 form-control" value="0" type="text" name="ingc1" id=""></td>
+                        <td><input class="w-100 form-control" value="0" type="text" name="ingh1" id=""></td>
+                        <td><input class="w-100 form-control" value="0" type="text" name="ings1" id=""></td>
+                        <td><input class="w-100 form-control" value="0" type="text" name="ingc2" id=""></td>
+                        <td><input class="w-100 form-control" value="0" type="text" name="ingh2" id=""></td>
+                        <td><input class="w-100 form-control" value="0" type="text" name="ings2" id=""></td>
+                        <td><input class="w-100 form-control" value="0" type="text" name="ingc3" id=""></td>
+                        <td><input class="w-100 form-control" value="0" type="text" name="ingh3" id=""></td>
+                        <td><input class="w-100 form-control" value="0" type="text" name="ings3" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>Habilidades Cognitivas  y Creatividad</td>
+                        <td><input class="w-100 form-control" value="0" type="text" name="habc1" id=""></td>
+                        <td><input class="w-100 form-control" value="0" type="text" name="habh1" id=""></td>
+                        <td><input class="w-100 form-control" value="0" type="text" name="habs1" id=""></td>
+                        <td><input class="w-100 form-control" value="0" type="text" name="habc2" id=""></td>
+                        <td><input class="w-100 form-control" value="0" type="text" name="habh2" id=""></td>
+                        <td><input class="w-100 form-control" value="0" type="text" name="habs2" id=""></td>
+                        <td><input class="w-100 form-control" value="0" type="text" name="habc3" id=""></td>
+                        <td><input class="w-100 form-control" value="0" type="text" name="habh3" id=""></td>
+                        <td><input class="w-100 form-control" value="0" type="text" name="habs3" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>Matemáticas para Ingeniería I</td>
+                        <td><input class="w-100 form-control" value="0" type="text" name="matc1" id=""></td>
+                        <td><input class="w-100 form-control" value="0" type="text" name="math1" id=""></td>
+                        <td><input class="w-100 form-control" value="0" type="text" name="mats1" id=""></td>
+                        <td><input class="w-100 form-control" value="0" type="text" name="matc2" id=""></td>
+                        <td><input class="w-100 form-control" value="0" type="text" name="math2" id=""></td>
+                        <td><input class="w-100 form-control" value="0" type="text" name="mats2" id=""></td>
+                        <td><input class="w-100 form-control" value="0" type="text" name="matc3" id=""></td>
+                        <td><input class="w-100 form-control" value="0" type="text" name="math3" id=""></td>
+                        <td><input class="w-100 form-control" value="0" type="text" name="mats3" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>Programación Web</td>
+                        <td><input class="w-100 form-control" value="0" type="text" name="proc1" id=""></td>
+                        <td><input class="w-100 form-control" value="0" type="text" name="proh1" id=""></td>
+                        <td><input class="w-100 form-control" value="0" type="text" name="pros1" id=""></td>
+                        <td><input class="w-100 form-control" value="0" type="text" name="proc2" id=""></td>
+                        <td><input class="w-100 form-control" value="0" type="text" name="proh2" id=""></td>
+                        <td><input class="w-100 form-control" value="0" type="text" name="pros2" id=""></td>
+                        <td><input class="w-100 form-control" value="0" type="text" name="proc3" id=""></td>
+                        <td><input class="w-100 form-control" value="0" type="text" name="proh3" id=""></td>
+                        <td><input class="w-100 form-control" value="0" type="text" name="pros3" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>Diseño de Interfaces</td>
+                        <td><input class="w-100 form-control" value="0" type="text" name="disc1" id=""></td>
+                        <td><input class="w-100 form-control" value="0" type="text" name="dish1" id=""></td>
+                        <td><input class="w-100 form-control" value="0" type="text" name="diss1" id=""></td>
+                        <td><input class="w-100 form-control" value="0" type="text" name="disc2" id=""></td>
+                        <td><input class="w-100 form-control" value="0" type="text" name="dish2" id=""></td>
+                        <td><input class="w-100 form-control" value="0" type="text" name="diss2" id=""></td>
+                        <td><input class="w-100 form-control" value="0" type="text" name="disc3" id=""></td>
+                        <td><input class="w-100 form-control" value="0" type="text" name="dish3" id=""></td>
+                        <td><input class="w-100 form-control" value="0" type="text" name="diss3" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>Bases de Datos</td>
+                        <td><input class="w-100 form-control" value="0" type="text" name="basc1" id=""></td>
+                        <td><input class="w-100 form-control" value="0" type="text" name="bash1" id=""></td>
+                        <td><input class="w-100 form-control" value="0" type="text" name="bass1" id=""></td>
+                        <td><input class="w-100 form-control" value="0" type="text" name="basc2" id=""></td>
+                        <td><input class="w-100 form-control" value="0" type="text" name="bash2" id=""></td>
+                        <td><input class="w-100 form-control" value="0" type="text" name="bass2" id=""></td>
+                        <td><input class="w-100 form-control" value="0" type="text" name="basc3" id=""></td>
+                        <td><input class="w-100 form-control" value="0" type="text" name="bash3" id=""></td>
+                        <td><input class="w-100 form-control" value="0" type="text" name="bass3" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>Electricidad y Magnetismo</td>
+                        <td><input class="w-100 form-control" value="0" type="text" name="elec1" id=""></td>
+                        <td><input class="w-100 form-control" value="0" type="text" name="eleh1" id=""></td>
+                        <td><input class="w-100 form-control" value="0" type="text" name="eles1" id=""></td>
+                        <td><input class="w-100 form-control" value="0" type="text" name="elec2" id=""></td>
+                        <td><input class="w-100 form-control" value="0" type="text" name="eleh2" id=""></td>
+                        <td><input class="w-100 form-control" value="0" type="text" name="eles2" id=""></td>
+                        <td><input class="w-100 form-control" value="0" type="text" name="elec3" id=""></td>
+                        <td><input class="w-100 form-control" value="0" type="text" name="eleh3" id=""></td>
+                        <td><input class="w-100 form-control" value="0" type="text" name="eles3" id=""></td>
+                    </tr>
+                </tbody>
+            </table>
+            <input type="submit" class="btn btn-outline-dark" value="Generar boleta">  
+        </form>
+    </div>
+    <!--Footer-->
+    <footer class="container-fluid m-0 p-2 bg-light fixed-bottom d-print-none">
+        ® ComiColmillos - Todos los derechos recervados.
+    </footer>    
+    <script src="script/bootstrap.bundle.js"></script>
+</body>
+</html>
